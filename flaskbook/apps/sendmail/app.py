@@ -81,6 +81,6 @@ def contact_complete():
 def send_email(to, subject, template, **kwargs):
     # 메일을 송신하는 함수
     msg = Message(subject, recipients=[to])
-    msg.body = render_template(template + ".txt", **kwargs)
-    msg.html = render_template(template + ".html", **kwargs)
+    msg.body = render_template(template + ".txt", **kwargs)  ## .txt를 가지고 rendering한다
+    msg.html = render_template(template + ".html", **kwargs)  ## .html를 가지고 rendering한다.
     mail.send(msg)
