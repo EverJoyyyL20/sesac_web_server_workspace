@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> 구구단을 외자 </h1>
+    출력하고자 하는 구구단을 입력하세요
+    <form action="{{ url_for('gugudan') }}" method="POST" novalidate="novalidate">
+    <table>
+        <tr>
+            <td>
+                <input type="number" name="gugudaninput" value="{{ gugudan }}" placeholder="몇단" />
+            </td>
+        </tr> 
+    </table>
+    </form>   
+    <input type="submit" value="구구단 확인하기">
+</body>
+</html>

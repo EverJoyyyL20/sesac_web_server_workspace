@@ -21,7 +21,7 @@ def contact_complete():
         return redirect(url_for("contact_complete"))
     return render_template("contact_complete.html")
 
-## url확인용이다.
-with app.test_request_context():
-    print(url_for("index_old"))
-    print(url_for("show_name",name='AK'))
+# ## url확인용이다.
+# with app.test_request_context():
+#     print(url_for("index"))
+#     print(url_for("show_name",name='AK'))
